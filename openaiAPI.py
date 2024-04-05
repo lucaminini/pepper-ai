@@ -1,7 +1,7 @@
 import requests
 import json
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = ""
 
 url = "https://api.openai.com/v1/chat/completions"
 
