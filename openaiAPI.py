@@ -1,13 +1,13 @@
 import requests
 import json
 
-OPENAI_API_KEY = "enter your api key"
+OPENAI_API = "enter your api key"
 
 url = "https://api.openai.com/v1/chat/completions"
 
 headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer {}".format(OPENAI_API_KEY)
+    "Authorization": "Bearer {}".format(OPENAI_API)
 }
 
 oldMessages = [
