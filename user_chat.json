@@ -1,0 +1,26 @@
+[
+    {
+        "content": "cosa ti ho chiesto prima?", 
+        "role": "user"
+    }, 
+    {
+        "content": "Mi hai chiesto cosa ti avevo chiesto prima.", 
+        "role": "assistant"
+    }, 
+    {
+        "content": "cosa ti ho chiesto prima?", 
+        "role": "user"
+    }, 
+    {
+        "content": "Mi hai chiesto cosa ti avevo chiesto prima.", 
+        "role": "assistant"
+    }, 
+    {
+        "content": "cosa ti ho chiesto prima?", 
+        "role": "user"
+    }, 
+    {
+        "content": "Mi hai chiesto cosa ti avevo chiesto prima.", 
+        "role": "assistant"
+    }
+]
