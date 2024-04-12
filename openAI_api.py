@@ -6,13 +6,15 @@ import os
 class OpenAIapi:
     url = "https://api.openai.com/v1/chat/completions"
 
-    def __init__(self, api_key, openai_model, chat_file):
+    def __init__(self, api_key, openai_model, chat_file, max_messages):
         self.headers = {
             "Content-Type": "application/json",
             "Authorization": "Bearer {}".format(api_key)
         }
         self.model = openai_model
         self.chat_file = chat_file
+
+        self.max_messages = max_messages
 
         if not os.path.exists(chat_file):
             with open(chat_file, 'w') as x:
@@ -26,6 +28,8 @@ class OpenAIapi:
     def llm(self, role, query):
         with open(self.chat_file, 'r') as x:
             old_messages = json.load(x)
+
+        old_messages = old_messages[-self.max_messages:]
 
         data = {
             "model": self.model,
